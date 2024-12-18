@@ -5,8 +5,8 @@ import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 const s3Client = new S3Client({
   region: "ap-south-1", // Make sure this matches your bucket region
   credentials: {
-    accessKeyId: process.env.AWS_ACCESS_KEY,
-    secretAccessKey: process.env.AWS_SECRET_KEY,
+    accessKeyId: process.env.SBX_AWS_ACCESS_KEY,
+    secretAccessKey: process.env.SBX_AWS_SECRET_KEY,
   },
 });
 
