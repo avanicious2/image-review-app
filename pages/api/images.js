@@ -39,7 +39,7 @@ export default async function handler(req, res) {
        AND r.reviewer_email = ?
        WHERE i.assigned_batch = ?
        AND (r.review_score IS NULL)
-       ORDER BY i.id ASC
+       ORDER BY i.id DESC
        LIMIT 300`;
     
     console.log('Executing images query:', imagesQuery);
